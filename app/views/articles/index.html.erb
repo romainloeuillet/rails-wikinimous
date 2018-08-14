@@ -1,0 +1,5 @@
+<ul class= "text-center list-unstyled ul-colored">
+  <% @articles.each do |article| %>
+    <li><%= link_to article.title, article_path(article.id) %></li>
+  <% end %>
+</ul>
